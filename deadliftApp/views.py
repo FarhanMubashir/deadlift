@@ -13,8 +13,6 @@ from mpl_toolkits.mplot3d import Axes3D
 
 
 def index(request):
-    a = cv2.getWindowProperty('Image', cv2.WND_PROP_VISIBLE)
-    print(a,'_________________value of a')
     return render(request,'index.html')
 
 
