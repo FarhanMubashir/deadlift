@@ -1,6 +1,10 @@
 body {
     margin: 0;
     padding: 0;
+    background-image:  url('../images/bg1.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
 }
 
 .btn {
@@ -22,17 +26,11 @@ body {
 }
 
 .btn:hover {
-    background: rgba(0, 0, 0, 0.1);
+    background: rgba(245, 242, 242, 0.954);
     cursor: pointer;
 }
 
-img {
+/* img {
     width: 100%;
     height: auto;
-}
-.aboutpic{
-    background-image:  url('../images/bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+} */
