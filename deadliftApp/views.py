@@ -19,6 +19,7 @@ def index(request):
 
 
 def start(request):
+    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
     class poseDetector():
 
         def __init__(self, mode=False, modelComp = 1, smooth=True, enable_seg=False,
@@ -94,7 +95,7 @@ def start(request):
 
             return angle
 
-    cap = cv2.VideoCapture(0, cv2.CAP_DSHOW)
+    
 
     calib = [0,0]
     disKnee = []
@@ -329,5 +330,6 @@ def start(request):
 
     cap.release()
     cv2.destroyAllWindows()
-
     return redirect('/')
+
+    
