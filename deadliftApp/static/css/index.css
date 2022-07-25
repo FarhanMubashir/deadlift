@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:  url('../images/bg1.jpg');
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn {
+    color: #fff;
+    font-family: helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: #000;
+    border: 0;
+    padding: 20px 20px;
+    border-radius: 3px;
+    line-height: 0.428571;
+    position: absolute;
+    z-index: 1;
+    letter-spacing: -0.2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn:hover {
+    background: rgba(245, 242, 242, 0.954);
+    cursor: pointer;
+}
+
+/* img {
+    width: 100%;
+    height: auto;
+} */
