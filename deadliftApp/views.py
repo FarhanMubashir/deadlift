@@ -19,7 +19,6 @@ def index(request):
 
 
 def start(request):
-
     class poseDetector():
         def __init__(self, mode=False, modelComp = 1, smooth=True, enable_seg=False,
                         smooth_seg=False, detectionCon=0.5, trackCon=0.5):
@@ -147,7 +146,6 @@ def start(request):
 
 
     detector = poseDetector()
-
 
     while cap.isOpened():
         success, img = cap.read()
@@ -386,12 +384,9 @@ def start(request):
         cv2.namedWindow("Image", cv2.WINDOW_NORMAL)
 
         cv2.imshow('Image', img)
+
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
-        
-        
-
-
 
     cap.release()
     cv2.destroyAllWindows()
