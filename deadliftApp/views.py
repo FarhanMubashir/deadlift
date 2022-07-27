@@ -180,6 +180,6 @@ def start(request):
         cam = VideoCamera()
         return StreamingHttpResponse(gen(cam), content_type="multipart/x-mixed-replace;boundary=frame")
     except:  # This is bad! replace it with proper handling
-        pass
+        return redirect('/')
 
     
