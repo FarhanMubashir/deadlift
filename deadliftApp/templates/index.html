@@ -21,6 +21,22 @@
       </div>
 
 
+
+      <script>
+        alert('test')
+        var video = document.querySelector("#videoElement");
+        alert(video)
+        
+        if (navigator.mediaDevices.getUserMedia) {
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function (stream) {
+            video.srcObject = stream;
+            })
+            .catch(function (err0r) {
+            console.log("Something went wrong!");
+            });
+        }
+      </script>
 </body>
 
 </html>
